@@ -24,8 +24,8 @@ const Navbar = () => {
     <nav className="nav" onMouseOver={handleSubmenu}>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} className='nav-logo' alt="stripe" />
-          <button className='btn toggle-btn' onclick={openSidebar}>
+          <img src={logo} className='nav-logo' alt="" />
+          <button className='btn toggle-btn' onClick={openSidebar}>
             <FaBars />
           </button>
         </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
         <button className='btn signin-btn'>Sign in</button>
       </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Navbar

@@ -11,17 +11,17 @@ const Submenu = () => {
   const [columns, setColumns] = useState('col-2')
   useEffect(() => {
     setColumns('col-2')
-  const submenu = container.current
-  const { center, bottom } = location
-  submenu.style.left = `${center}px`
-  submenu.style.top = `${bottom}px`
-  console.log(links)
-  if (links.length === 3) {
-    setColumns('col-3')
-  }
-  if (links.length > 3) {
-    setColumns('col-4') // col-4, col-5, col-6
-  }
+    const submenu = container.current
+    const { center, bottom } = location
+    submenu.style.left = `${center}px`
+    submenu.style.top = `${bottom}px`
+    console.log(links)
+    if (links.length === 3) {
+      setColumns('col-3')
+    }
+    if (links.length > 3) {
+      setColumns('col-4')
+    }
   }, [page, location, links])
   return (
     <aside
